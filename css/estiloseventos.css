@@ -1,0 +1,841 @@
+html{
+	scroll-behavior: smooth;
+}
+
+header, section, footer{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header{
+	height: 60px;
+}
+
+#logo_1{
+	width: 100px;
+	height: 60px;
+	float: left;
+}
+
+#logo_1 a img{
+	margin-left: 25px;
+}
+
+#post_logo_1{
+	width: 560px; 
+	height: 60px;
+	float: left;
+	background: -webkit-gradient(linear,0 0, 0 50%, from(#ffffff), to(#eb9f23)); 
+	background: linear-gradient(25%, #ffffff , #eb9f23)
+	background: -moz-linear-gradient(25%, #ffffff , #eb9f23);
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	text-align: center;
+	color: #000;
+	font-family: Verdana;
+}
+
+#botonera{
+	width: 300px;
+	height: 60px;
+	float: right;
+}
+
+#botonera ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#botonera ul li{
+	display: inline;
+}
+
+#botonera ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	padding: 22px 5px;
+}
+
+#botonera ul li a:hover {
+	background: -webkit-gradient(linear,0 0, 0 50%, from(#ffffff), to(#eb9f23));
+	background: linear-gradient(25%, #ffffff , #eb9f23)
+	background: -moz-linear-gradient(25%, #ffffff , #eb9f23);
+	color: #ffffff;
+	height: 16px;
+}
+
+section{
+	height:1650px;
+}
+
+#nombre{
+	margin-top: 2px;
+	width: 960px;
+	height: 180px;
+}
+
+#contenido{
+	width: 400px;
+	height: 40px;
+	background-color: rgba(0,0,0,1);
+	margin-left: auto;
+	margin-right: auto; 
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px; 
+	margin-bottom: 10px;
+	box-shadow: 7px 7px 7px #cccccc;
+	-moz-box-shadow: 7px 7px 7px #cccccc;
+	-webkit-box-shadow: 7px 7px 7px #cccccc;
+}
+
+#contenido p{
+	text-align: center;
+	font-family: Verdana;
+	color: #cccccc;
+	font-size: 16px;
+}
+
+#bienvenidos{
+	width: 540px;
+	height: 100px;
+	background-color: #e8dcc5;
+}
+
+#bienvenidos h1{
+	color: #008000;
+	margin-left: 5px;
+	font-size: 35px;
+	padding: 10px 0;
+}
+
+#seccion_derecha{
+	width: 400px;
+	height: 1152px;
+	background-color: #eb9f23;
+	float: right;
+	font-size: 25px;
+	font-family: 'Nerko One', cursive;
+	margin-bottom: 20px;
+}
+
+#seccion_derecha #contacto{
+	width: 380px;
+	height: 340px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#seccion_derecha #contacto #horario{
+	width: 360px;
+	height: 95px;
+	margin-right: auto;
+	margin-left: auto; 
+	color: #ffffff;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	border-bottom-left-radius: 45px;
+	border-bottom-right-radius: 45px;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px; 
+}
+
+#seccion_derecha #contacto #mail{
+	width: 360px;
+	height: 70px;
+	margin-right: auto;
+	margin-left: auto; 
+	color: #ffffff;
+	text-align: center;
+	margin-top: 10px;
+	background-color: rgba(0,0,0,0.4);
+	border-bottom-left-radius: 45px;
+	border-bottom-right-radius: 45px;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px; 
+}
+
+#seccion_derecha #contacto #telefono{
+	width: 360px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto; 
+	color: #ffffff;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	border-bottom-left-radius: 45px;
+	border-bottom-right-radius: 45px;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px; 
+}
+
+figure img{
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2px;
+	width: 95%;
+	border: 1px solid #999;
+}
+
+#seccion_derecha .imagenes-salon{
+	height: 700px;
+}
+
+#listas_1{
+	width: 540px;
+	height: 450px;
+	background-color: #e8dcc5;
+	float: left;
+}
+
+#listas_1 p{
+	text-indent: 10px;
+	font-family: Courier;
+	font-size: 35px;
+	color: #FF0000;
+}
+
+#listas_1 ul li{
+	font-family: Comic Sans MS;
+	font-size: 18px;
+}
+
+#listas_2{
+	width: 540px;
+	height: 600px;
+	background-color: rgba(232,220,197,1);
+	float: left;
+	margin-top: 2px;
+}
+
+#listas_2 p{
+	text-indent: 10px;
+	font-family: Courier;
+	font-size: 35px;
+	color: #FF0000;
+}
+
+#listas_2 ul li{
+	font-family: Comic Sans MS;
+	font-size: 18px;
+}
+
+#menu_infantil{
+	width: 540px;
+	height: 220px;
+	background-color: #e8dcc5;
+	float: left;
+	margin-top: 2px;
+}
+
+#menu_infantil p{
+	text-indent: 10px;
+	font-family: Courier;
+	font-size: 35px;
+	color: #FF0000;
+}
+
+#menu_infantil ul li{
+	font-family: Comic Sans MS;
+	font-size: 18px;
+}
+
+#adicionales{
+	width: 420px;
+	height: 100px;
+	background-color: #e8dcc5;
+	float: right;
+	margin-top: 2px;
+	word-break: break-word;
+}
+
+#adicionales h3{
+	margin-bottom: 0px;
+	margin-top: 10px;
+	color: #000;
+	text-indent: 5px;
+	color: red;
+	font-family: Courier;
+}
+
+#adicionales p{
+	font-family: Comic Sans MS;
+	font-size: 15px;
+	margin-top: 5px;
+	color: #000;
+	margin-left: 5px;
+}
+
+footer{
+	height: 310px;
+	background-color: #000000;
+	margin-top: 5px;
+}
+
+#ubicacion{
+	height: 40px;
+	width: 300px;
+	float: right;
+}
+
+#ubicacion p{
+	color: #ffffff;
+	font-size: 30px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+h4{
+	color: #ffffff;
+}
+
+#redes{
+	height: 40px;
+	width: 320px;
+	background-color: #614c36;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+#redes ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#redes ul li{
+	display: inline;
+}
+
+#redes ul li{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0px 30px;
+}
+
+#informacion{
+	height: 270px;
+	width: 650px;
+	float: left;
+	font-family: Verdana;
+}
+
+#informacion ul{
+	list-style: circle;
+	margin-top: 50px;
+}
+
+#informacion ul li{
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+#informacion p{
+	margin-left: 25px;
+	color: #FFFFFF; 
+	font-size: 15px;
+}
+
+#informacion #gracias{
+	text-align: center;
+	color: red;
+}
+
+#gps_rojo{
+	height: 270px;
+	width: 290px;
+	float: right;
+}
+
+#gps_rojo iframe{
+	width: 285px;
+	height: 265px;
+
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+
+header, section, footer{
+	width: 580px;
+}
+
+#post_logo_1{
+	width: 180px; 
+}
+
+#botonera ul li{
+	font-size: 15px;
+}
+
+#botonera ul li a{
+	padding: px 3px;
+}
+
+section{
+	height: 1589px;
+}
+
+#nombre{
+	width: 580px;
+	height: auto;
+}
+
+#nombre img{
+	width: 100%;
+}
+
+#contenido{
+	width: 300px;
+	height: 30px;
+}
+
+#contenido p{
+	font-size: 12px;
+}
+
+#bienvenidos{
+	width: 100%;
+}
+
+#bienvenidos p{
+	margin-left: 0px; 
+	text-align: center;
+}
+
+#seccion_derecha{
+	width: 250px;
+	height: 1079px;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+#seccion_derecha #contacto{
+	width: 100%;
+	height: auto;
+}
+
+#seccion_derecha #contacto #horario{
+	width: 100%;
+	height: auto;
+}
+
+#seccion_derecha #contacto #mail{
+	width: 100%;
+	height: 60px;
+}
+
+#seccion_derecha #contacto #telefono{
+	width: 100%;
+	height: auto;
+}
+
+figure img{
+	margin-bottom: 10px;
+	width: 97.5%;
+}
+
+#seccion_derecha .imagenes-salon{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	margin-left: 0;
+}
+
+#listas_1{
+	width: 325px;
+	height: auto;
+}
+
+#listas_2{
+	width: 325px;
+	height: auto;
+}
+
+#menu_infantil{
+	width: 325px;
+}
+
+#menu_infantil ul li{
+	font-family: Comic Sans MS;
+	font-size: 18px;
+}
+
+#adicionales{
+	width: 250px;
+	height: 220px;
+	margin-top: 2px;
+}
+
+#adicionales h3{
+	margin-top: 30px;
+	text-align: center;
+}
+
+#adicionales p{
+	font-size: 17px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+#ubicacion{
+	width: 250px;
+}
+
+#redes{
+	width: 250px;
+}
+
+#redes ul li{
+	padding: 0px 20px;
+}
+
+#informacion{
+	height: auto;
+	width: 250px;
+}
+
+#informacion ul{
+	margin-top: 5px;
+}
+
+#informacion ul li{
+	color: #FFFFFF;
+	font-size: 11px;
+}
+
+#informacion p{
+	color: #FFFFFF; 
+	font-size: 11px;
+	margin-left: 25px;
+}
+
+#gps_rojo{
+	width: 250px;
+}
+
+#gps_rojo iframe{
+	width: 245px;
+}
+
+}/*fin media 600x1023px*/
+
+@media all and (max-width: 599px){
+
+header, section, footer{
+	width: 90%;
+}
+
+header{
+	height: auto;
+}
+
+#logo_1{
+	width: 15%;
+}
+
+#logo_1 a img{
+	margin-left: 0;
+}
+
+#post_logo_1{
+	width: 85%; 
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	margin-left: 0;
+	float: right;
+}
+
+#botonera{
+	width: 150px;
+	height: auto;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 11px;
+}
+
+#botonera ul{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#botonera ul li{
+	display: block;
+	text-align: center;
+}
+
+#botonera ul li a{
+	padding: 22px 0px;
+}
+
+#botonera ul li a:hover {
+	width: 100%;
+	background: -webkit-gradient(linear,0 0, 0 1%, from(#ffffff), to(#eb9f23));
+	color: #000;
+	height: auto;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+section{
+	width: 350px;
+	height: auto;
+}
+
+#nombre{
+	width: 100%;
+	height: auto;
+}
+
+#nombre img{
+	width: 100%;
+}
+
+#contenido{
+	width: 220px;
+	height: 30px; 
+}
+
+#contenido p{
+	font-size: 12px;
+}
+
+#bienvenidos{
+	width: 350px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bienvenidos h1{ 
+	font-size: 30px;
+	text-align: center;
+	padding: 0;
+}
+
+#seccion_derecha{
+	width: 350px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+#seccion_derecha #contacto{
+	width: 100%;
+	height: auto;
+}
+
+#seccion_derecha #contacto #horario{
+	width: 90%;
+	height: auto;
+}
+
+#seccion_derecha #contacto #mail{
+	width: 90%;
+	height: auto;
+}
+
+#seccion_derecha #contacto #telefono{
+	width: 90%;
+	height: auto;
+}
+
+figure img{
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2px;
+	width: 100%;
+	border: 1px solid #999;
+}
+
+#seccion_derecha .imagenes-salon{
+	height: auto;
+}
+
+#listas_1{
+	width: 350px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#listas_1 p{
+	text-align: center;
+	text-indent: 0;
+	font-size: 25px;
+	margin-bottom: 0;
+}
+
+#listas_1 ul{
+	padding: 0;
+	text-align: center;
+	list-style: none;
+	margin-top: 0;
+}
+
+#listas_1 ul li{
+	font-size: 15px;
+}
+
+#listas_2{
+	width: 350px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	margin-top: 0px;
+}
+
+#listas_2 p{
+	text-indent: 0;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#listas_2 ul{
+	padding: 0;
+	text-align: center;
+	list-style: none;
+	margin-top: 0;
+}
+
+#listas_2 ul li{
+	font-size: 15px;
+}
+
+#menu_infantil{
+	width: 350px;
+	height: auto;
+	float: none;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menu_infantil p{
+	text-indent: 0;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#menu_infantil ul{
+	margin-top: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#menu_infantil ul li{
+	font-size: 15px;
+}
+
+#adicionales{
+	width: 350px;
+	height: auto;
+	float: none;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+#adicionales h3{
+	text-indent: 0;
+	text-align: center;
+}
+
+#adicionales p{
+	font-size: 15px;
+	margin-top: 0;
+	margin-left: 0px;
+	text-align: center;
+}
+
+footer{
+	width: 350px;
+	height: 325px;
+	margin-top: 0px;
+}
+
+#ubicacion{
+	height: 30px;
+	width: 350px;
+	float: none;
+}
+
+#ubicacion p{
+	font-size: 20px;
+	margin-top: 0px;
+	text-align: center;
+	padding: 3px 0;
+}
+
+#redes{
+	height: 30px;
+	width: 350px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	margin-bottom: 0;
+}
+
+#redes ul li{
+	padding: 2px 44px;
+}
+
+#redes ul li img{
+	width: 25px;
+}
+
+#informacion{
+	height: 100px;
+	width: 350px;
+	float: none;
+}
+
+#informacion ul{
+	margin-top: 2px;
+}
+
+#informacion ul li{
+	font-size: 10px;
+}
+
+#informacion p{
+	font-size: 10px;
+	margin-left: 0;
+	text-align: center;
+}
+
+#informacion #gracias{
+	color: red;
+	margin-left: 0;
+}
+
+#gps_rojo{
+	height: 100px;
+	width: 350px;
+	float: none;
+	margin-bottom: 0;
+}
+
+#gps_rojo iframe{
+	width: 350px;
+	height: 100px;
+	margin-bottom: 0;
+}
+
+}/*fin media 599px*/
