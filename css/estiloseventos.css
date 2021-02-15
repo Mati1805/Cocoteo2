@@ -68,7 +68,38 @@ header{
 }
 
 section{
-	height:1650px;
+	height: 1650px;
+}
+
+#formulario{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	animation-duration: 3s;
+  	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 400px;
+  }
+
+  to {
+    margin-left: 29.3%;
+    width: 400px;
+  }
+}
+
+input, textarea{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	box-sizing: border-box;
+	padding: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
 #nombre{
@@ -173,10 +204,7 @@ section{
 }
 
 figure img{
-	margin-right: auto;
-	margin-left: auto;
-	padding: 2px;
-	width: 95%;
+	width: 150px;
 	border: 1px solid #999;
 }
 
@@ -270,6 +298,7 @@ figure img{
 }
 
 footer{
+	margin-top: auto;
 	height: 310px;
 	background-color: #000000;
 	margin-top: 5px;
@@ -375,7 +404,7 @@ header, section, footer{
 }
 
 section{
-	height: 1589px;
+	height: 1600px;
 }
 
 #nombre{
@@ -433,15 +462,14 @@ section{
 }
 
 figure img{
-	margin-bottom: 10px;
-	width: 97.5%;
+	width: 40%;
 }
 
 #seccion_derecha .imagenes-salon{
 	width: 100%;
 	height: auto;
-	margin-top: 100px;
-	margin-left: 0;
+	margin-top: 120px;
+	margin-left: 20px;
 }
 
 #listas_1{
@@ -648,15 +676,16 @@ section{
 }
 
 figure img{
-	margin-right: auto;
-	margin-left: auto;
-	padding: 2px;
-	width: 100%;
-	border: 1px solid #999;
+	width: 50px;
+}
+
+figure a .novisible{
+	display: none;
 }
 
 #seccion_derecha .imagenes-salon{
 	height: auto;
+	margin-left: 60px;
 }
 
 #listas_1{

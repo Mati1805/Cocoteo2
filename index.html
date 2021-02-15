@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="ccs/lightbox.css">
 </head>
 <body>
 	<header>
@@ -16,14 +17,20 @@
 		<div id="post_logo_1"></div>
 		<nav id="botonera">
 			<ul>
-				<li><a href="plugins/formulariologin.html">INICIAR SESIÓN</a></li>
-				<li><a href="#ubicacion">UBICACIÓN</a></li>
+				<li id="mensaje"><a href="#" onclick="mostrarform()">CONSULTAR</a></li>
+				<li><a href="#ubicacion" onclick="ubicacion()">UBICACIÓN</a></li>
 				<li><a href="plugins/cocoteobar.html">BAR</a></li>
 			</ul>
 		</nav>
 		
 	</header>
 	<section>
+		<form id="formulario" style="display:none;">
+			<input type="text" name="nombre" id="nombreyapellido" placeholder="Nombre y Apellido" maxlength="50" required>
+			<input type="email" name="correo" id="correo" placeholder="E-mail" required>
+			<textarea id="consulta" placeholder="Consultas" rows="5" maxlength="300"></textarea>
+			<input type="submit">
+		</form>
 		<div id="nombre"> 
 			<img src="imagenes/nombre.png">
 		</div> 
@@ -38,9 +45,16 @@
 				<div id="telefono"><p>TELÉFONO/CELULAR:<br>2194-1235/<br>11 5369-0833</p></div>
 			</div>
 			<figure class="imagenes-salon">
-				<img src="imagenes/cocoteo3.jpeg">
-				<img src="imagenes/cocoteo20.jpeg">
-				<img src="imagenes/cocoteo15.jpeg">
+				<a href="imagenes/cocoteo3.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo3.jpeg"></a>
+				<a href="imagenes/cocoteo20.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo20.jpeg"></a>
+				<a href="imagenes/cocoteo15.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo15.jpeg"></a>
+				<a href="imagenes/cocoteo4.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo4.jpeg"></a>
+				<a href="imagenes/cocoteo16.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo16.jpeg"></a>
+				<a href="imagenes/cocoteo12.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo16.jpeg"></a>
+				<a href="imagenes/cocoteo9.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo9.jpeg"></a>
+				<a href="imagenes/cocoteo6.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo6.jpeg"></a>
+				<a href="imagenes/cocoteo8.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo8.jpeg"></a>
+				<a href="imagenes/cocoteo19.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo19.jpeg"></a>
 			</figure>
 		</div>
 		<div id="listas_1">
@@ -75,7 +89,7 @@
 				<li>Área de animación</li>
 				<li>Mini disco</li>
 				<li>Sector niños y sector adultos</li>
-				<li>Monitor LED para fotos y videos</li>
+				<li>Proyector para fotos y videos</li>
 				<li>LCD con Nintendo Wii</li>
 				<li>asistencia médica</li>
 				<li>Seguros al día</li>
@@ -102,7 +116,7 @@
 		</script>
 		</div>
 	</section>
-	<footer>
+	<footer id="pie">
 		<div id="ubicacion"><p>UBICACIÓN<p></div>
 		<nav id="redes">
 			<ul>
@@ -119,5 +133,7 @@
 		</aside>
 	</footer>
 	<script type="text/javascript" src="js/eventos.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

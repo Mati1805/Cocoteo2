@@ -1,4 +1,4 @@
-var redireccion = confirm('ESTA PÁGINA AÚN NO FUNCIONA ¿Desea volver a la pagina de inicio?')
+var redireccion = confirm('POR EL MOMENTO ESTA PÁGINA NO FUNCIONA')
 if(redireccion==true){
        window.location.href = '../index.html';  
 }

@@ -16,11 +16,11 @@
 		</figure>
 		<h5>FORMULARIO DE REGISTRO</h5>
 		<p id="uys">
-			<input class="controls" type="text" name="nombre" value="" placeholder="Nombre">
-			<input class="controls" type="text" name="Apellido" value="" placeholder="Apellido">
-			<input class="controls" type="text" name="usuario" value="" placeholder="E-mail">
-			<input class="controls" type="password" name="contraseña" value="" placeholder="Contraseña">
-			<input class="controls" type="password" name="contraseña" value="" placeholder="Repita Contraseña">
+			<input class="controls" type="text" name="nombre" value="" placeholder="Nombre" required pattern="[A-Za-z]+">
+			<input class="controls" type="text" name="Apellido" value="" placeholder="Apellido" required pattern="[A-Za-z]+">
+			<input class="controls" type="text" name="usuario" value="" placeholder="E-mail" required>
+			<input class="controls" type="password" name="contraseña" value="" placeholder="Contraseña" maxlength="15" required pattern="[A-Za-z0-9]+">
+			<input class="controls" type="password" name="contraseña" value="" placeholder="Repita Contraseña" maxlength="15" required pattern="[A-Za-z0-9]+">
 			<input class="buttons" type="submit" name="" value="Registrar">
 		</p>
 		<p id="registrarse"><a href="formulariologin.html">¿Ya tengo cuenta?</a></p>
