@@ -407,6 +407,18 @@ section{
 	height: 1600px;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 400px;
+  }
+
+  to {
+    margin-left: 15.5%;
+    width: 400px;
+  }
+}
+
 #nombre{
 	width: 580px;
 	height: auto;
@@ -612,6 +624,22 @@ header{
 section{
 	width: 350px;
 	height: auto;
+}
+
+#formulario{
+	width: 350px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 350px;
+  }
+
+  to {
+    margin-left: 0;
+    width: 350px;
+  }
 }
 
 #nombre{
