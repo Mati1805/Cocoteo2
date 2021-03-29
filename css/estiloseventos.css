@@ -20,10 +20,27 @@ header{
 
 #logo_1 a img{
 	margin-left: 25px;
+	animation-duration: 3s;
+	animation-name: agrandar;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}
+
+@keyframes agrandar {
+  from {
+    margin-left: 0;
+    width: 0;
+  }
+
+  to {
+    margin-left: 25px;
+    width: 45px;
+  }
 }
 
 #post_logo_1{
-	width: 560px; 
+	width: 460px; 
 	height: 60px;
 	float: left;
 	background: -webkit-gradient(linear,0 0, 0 50%, from(#ffffff), to(#eb9f23)); 
@@ -36,35 +53,42 @@ header{
 	font-family: Verdana;
 }
 
-#botonera{
-	width: 300px;
+.botonera{
+	width: 400px;
 	height: 60px;
 	float: right;
 }
 
-#botonera ul{
+.botonera ul{
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
 }
 
-#botonera ul li{
-	display: inline;
-}
-
-#botonera ul li a{
+.botonera li a{
 	display: inline-block;
 	text-decoration: none;
 	color: #000000;
-	padding: 22px 5px;
+	padding: 22px 15px;
 }
 
-#botonera ul li a:hover {
+.botonera li a:hover {
 	background: -webkit-gradient(linear,0 0, 0 50%, from(#ffffff), to(#eb9f23));
 	background: linear-gradient(25%, #ffffff , #eb9f23)
 	background: -moz-linear-gradient(25%, #ffffff , #eb9f23);
 	color: #ffffff;
 	height: 16px;
+}
+
+.menuS ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.menuS li{
+	flex: 1 0 auto;
+	text-align: center;
 }
 
 section{
@@ -76,10 +100,10 @@ section{
 	margin-left: auto;
 	margin-right: auto;
 	animation-duration: 3s;
-  	animation-name: slidein;
+  	animation-name: desplazar;
 }
 
-@keyframes slidein {
+@keyframes desplazar {
   from {
     margin-left: 100%;
     width: 400px;
@@ -205,7 +229,8 @@ input, textarea{
 
 figure img{
 	width: 150px;
-	border: 1px solid #999;
+	border: 2px solid #999;
+	border-radius: 20px;
 }
 
 #seccion_derecha .imagenes-salon{
@@ -392,14 +417,14 @@ header, section, footer{
 }
 
 #post_logo_1{
-	width: 180px; 
+	width: 80px; 
 }
 
-#botonera ul li{
+.botonera ul li{
 	font-size: 15px;
 }
 
-#botonera ul li a{
+.botonera ul li a{
 	padding: px 3px;
 }
 
@@ -407,7 +432,7 @@ section{
 	height: 1600px;
 }
 
-@keyframes slidein {
+@keyframes desplazar {
   from {
     margin-left: 100%;
     width: 400px;
@@ -456,6 +481,7 @@ section{
 #seccion_derecha #contacto{
 	width: 100%;
 	height: auto;
+	margin-top: 60px;
 }
 
 #seccion_derecha #contacto #horario{
@@ -597,21 +623,20 @@ header{
 	font-size: 11px;
 }
 
-#botonera ul{
+.botonera ul{
 	margin-right: auto;
 	margin-left: auto;
 }
 
-#botonera ul li{
-	display: block;
+.botonera ul li{
 	text-align: center;
 }
 
-#botonera ul li a{
+.botonera ul li a{
 	padding: 22px 0px;
 }
 
-#botonera ul li a:hover {
+.botonera ul li a:hover {
 	width: 100%;
 	background: -webkit-gradient(linear,0 0, 0 1%, from(#ffffff), to(#eb9f23));
 	color: #000;
@@ -630,7 +655,7 @@ section{
 	width: 350px;
 }
 
-@keyframes slidein {
+@keyframes desplazar {
   from {
     margin-left: 100%;
     width: 350px;
@@ -707,7 +732,7 @@ figure img{
 	width: 50px;
 }
 
-figure a .novisible{
+figure .novisible{
 	display: none;
 }
 

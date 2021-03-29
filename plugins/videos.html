@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cocoteo Eventos</title>
+	<meta http-equiv="Content-Type" content="type/html" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/videos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/iconos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<nav id="logo_1">
+			<a href="../index.html"><img src="../imagenes/logococoteo.png"></a>
+		</nav>	
+		<div id="post_logo_1"></div>
+		<nav id="botonera">
+			<ul>
+				<li id="mensaje"><a href="#" onclick="mostrarform()">CONSULTAR</a></li>
+				<li><a href="../index.html">FIESTAS</a></li>
+				<li><a href="../plugins/cocoteobar.html">BAR</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<form id="formulario" style="display:none;">
+			<input type="text" name="nombre" id="nombreyapellido" placeholder="Nombre y Apellido" maxlength="50" required>
+			<input type="email" name="correo" id="correo" placeholder="E-mail" required>
+			<textarea id="consulta" placeholder="Consultas" rows="5" maxlength="300"></textarea>
+			<input type="submit">
+		</form>
+		<h1>VIDEO:</h1>
+		<p>MINI DISCO INFANTIL</p>
+		<video id="cocoteovideo" src="../imagenes/cocoteovideo.mp4"></video>
+		<nav id="reproductor">
+			<ul>
+				<li>
+					<a href="#" id="reproducir" onclick="reproducir()">
+						<span class="icon-play3"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="inicio" onclick="inicio()">
+						<span class="icon-stop2"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="atrazar" onclick="mover(-1)">
+						<span class="icon-undo"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="avanzar" onclick="mover(2)">
+						<span class="icon-redo"></span>
+					</a>
+				</li>
+			</ul>
+		</nav>	
+	</section>
+	<script type="text/javascript" src="../js/video.js"></script>
+	<script type="text/javascript" src="../js/eventos.js"></script>
+</body>
+</html>

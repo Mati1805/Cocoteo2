@@ -33,37 +33,44 @@ header{
 	background: -moz-linear-gradient(50%, #eb9f23 , #2c2c2c);
 }
 
-#botonera{
+.botonera{
 	width: 470px;
 	height: 60px;
 	float: left;
 	margin-right: 0;
 }
 
-#botonera ul{
+.botonera ul{
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
 }
 
-#botonera ul li{
-	display: inline;
-}
-
-#botonera ul li a{
-	display: inline-block;
+.botonera li a{
+	display: block;
 	text-decoration: none;
 	color: #000000;
 	padding: 22px 27.7px;
 }
 
-#botonera ul li a:hover {
+.botonera ul li a:hover {
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#eb9f23), to(#2c2c2c));
 	background: radial-gradient(50%, #eb9f23 , #2c2c2c)
 	background: -moz-radial-gradient(50%, #eb9f23 , #2c2c2c);
 	color: #ffffff;
 	height: 16px;
 	margin-right: 0px;
+}
+
+.menuS ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+
+.menuS li{
+	flex: 1 0 auto;
+	text-align: center;
 }
 
 #pre_logo_2{
@@ -347,11 +354,11 @@ header{
 	width: 100px; 
 }
 
-#botonera{
+.botonera{
 	width: 250px;
 }
 
-#botonera ul li a{
+.botonera li a{
 	padding: 22px 0px;
 }
 
@@ -570,7 +577,7 @@ header{
 	display: none;
 }
 
-#botonera{
+.botonera{
 	width: 200px;
 	height: 204px;
 	float: none;
@@ -585,19 +592,21 @@ header{
 	-moz-border-radius: 15px;
 }
 
-#botonera ul li{
-	display: block;
-}
-
-#botonera ul li a{
+.botonera li a{
 	width: 100%;
 	padding: 20px 0;
 }
 
-#botonera ul li a:hover {
+.botonera ul li a:hover {
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#cccccc));
 	color: #000000;
 	height: auto;
+}
+
+.menuS ul{
+	display: block;
+	flex-wrap: none;
+	justify-content: none;	
 }
 
 #pre_logo_2{
