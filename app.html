@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cocoteo Eventos</title>
+	<meta http-equiv="Content-Type" content="type/html" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+</head>
+<body onload="mostrar()">
+	<header>
+		<nav id="logo_1">
+			<a href="../index.html"><img src="imagenes/logococoteo.png"></a>
+		</nav>	
+		<nav class="menuS  botonera">
+			<ul>
+				<li><a href="index.html">INCIO</a></li>
+				<li id="mensaje"><a href="#" onclick="mostrarform()">FORMULARIO</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	<section>
+		<form id="formulario" style="display:none;">
+			<select id="eventos">
+				<option value="tipo">Tipo de evento</option>
+				<option value="infantil">Infantil</option>
+				<option value="Adultos">Adulto</option>
+				<option value="15">15</option>
+				<option value="Casamiento">Casamiento</option>
+			</select>
+			<input type="number" id="clave" min="1" max="150" placeholder="Numero de personas">
+			<textarea id="recordatorios" placeholder="Notas" rows="5" maxlength="300"></textarea>
+			<input type="date" id="fecha">
+			<input type="button" id="grabar" value="Guardar Notas" onclick="grabar()">
+			<div id="mostrarDatos"></div>
+		</form>
+		<div id="contenido">
+			<p>Salón de Fiestas Infantiles y Multieventos en Castelar</p>
+		</div>
+		<div id="bienvenidos"><h1>Bienvenidos a <br>COCOTEO EVENTOS</h1></div>
+		<div id="seccion_derecha">
+			<div id="contacto">
+				<div id="horario"><p>HORARIO DE ATENCIÓN<br>De Martes a Sábado <br>de 17 a 23hs</p></div>
+				<div id="mail"><p>E-MAIL: <br><a href="mailto:cocoteoeventos@hotmail.com">cocoteoeventos@hotmail.com</a></div>
+				<div id="telefono"><p>TELÉFONO/CELULAR:<br>2194-1235/<br>11 5369-0833</p></div>
+			</div>
+			<figure class="imagenes-salon">
+				<a href="imagenes/cocoteo3.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo3.jpeg"></a>
+				<a class="novisible" href="imagenes/cocoteo20.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo20.jpeg"></a>
+				<a href="imagenes/cocoteo15.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo15.jpeg"></a>
+				<a href="imagenes/cocoteo4.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo4.jpeg"></a>
+				<a href="imagenes/cocoteo16.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo16.jpeg"></a>
+				<a class="novisible" href="imagenes/cocoteo12.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo16.jpeg"></a>
+				<a class="novisible" href="imagenes/cocoteo9.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo9.jpeg"></a>
+				<a class="novisible" href="imagenes/cocoteo6.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo6.jpeg"></a>
+				<a class="novisible" href="imagenes/cocoteo8.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo8.jpeg"></a>
+				<a class="novisible" href="imagenes/cocoteo19.jpeg" data-lightbox="galeria"><img src="imagenes/cocoteo19.jpeg"></a>
+			</figure>
+		</div>
+		<div id="notas"><p>NOTAS Y/O RECORDATORIOS PARA SU CUMPLEAÑOS</p></div>
+		<div id="listas">
+			<ul id="lista" contenteditable="true">
+				<li>Notas: </li>
+			</ul>
+			<button onclick="guardar()">GUARDAR</button>
+			<button onclick="borrar()">BORRAR</button>
+		</div>
+		
+	</section>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/formularioapp.js"></script>
+</body>
+</html>
